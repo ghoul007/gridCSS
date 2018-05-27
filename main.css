@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.grid>div{
+    background-color:gray;
+    border: solid 1px #222
+}
+
+.site{
+  height: 100vh;
+    display: grid;
+    grid-template-rows: 69px 1fr 33px;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "header header"
+    "sidebar body"
+    "footer footer";
+}
+
+.header{ 
+     width: 100%;
+    grid-area: header;
+    background: #009688;
+}
+
+.body{
+    grid-area: body;
+    background:#9E9E9E;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background: rgb(83, 74, 74);
+}
+
+.footer{
+    grid-area: footer;
+    background: #795548;
+}
